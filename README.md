@@ -1,6 +1,6 @@
 # Cantonese Wikipedia Dump
 
-This repo contains a plain text dump of the Cantonese Wikipedia on September 1st, 2022. As specified by [WikiMedia](https://dumps.wikimedia.org/legal.html), all original textual content is licensed under the [GNU Free Documentation License (GFDL)](https://www.gnu.org/licenses/fdl-1.3.html) and the [Creative Commons Attribution-Share-Alike 3.0 License](https://creativecommons.org/licenses/by-sa/3.0/).
+This repo contains a plain text dump of the Cantonese Wikipedia on September 1st, 2022. There are 16,527,423 Chinese characters in the full dump. As specified by [WikiMedia](https://dumps.wikimedia.org/legal.html), all original textual content is licensed under the [GNU Free Documentation License (GFDL)](https://www.gnu.org/licenses/fdl-1.3.html) and the [Creative Commons Attribution-Share-Alike 3.0 License](https://creativecommons.org/licenses/by-sa/3.0/).
 
 # Structure of the Dump
 
