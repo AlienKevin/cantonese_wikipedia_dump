@@ -1,0 +1,3 @@
+[submodule "cantonese-classifier"]
+	path = cantonese-classifier
+	url = https://github.com/CanCLID/cantonese-classifier
