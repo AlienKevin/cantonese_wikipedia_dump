@@ -1,6 +1,8 @@
 # Cantonese Wikipedia Dump
 
-This repo contains a plain text dump of the Cantonese Wikipedia on September 1st, 2022. There are 16,527,423 Chinese characters in the full dump. As specified by [WikiMedia](https://dumps.wikimedia.org/legal.html), all original textual content is licensed under the [GNU Free Documentation License (GFDL)](https://www.gnu.org/licenses/fdl-1.3.html) and the [Creative Commons Attribution-Share-Alike 3.0 License](https://creativecommons.org/licenses/by-sa/3.0/).
+This repo contains a plain text dump of the Cantonese Wikipedia on September 1st, 2022. Some estimated statistics of the dump:
+* CJK characters ≈ 16,527,423
+* Unique Cantonese characters ≈ 2,140,870 (13% of all CJK characters)
 
 # Structure of the Dump
 
@@ -49,3 +51,10 @@ Fields:
 	* `PATH_TO_DUMPED_XML` may be a path like: `~/Downloads/zh_yuewiki-20220901-pages-articles-multistream.xml.bz2`
 	* `PATH_TO_OUTPUT_FOLDER` may be a path like: `~/Downloads/wiki_outputs`
 
+# License
+
+## Wikipedia Dump
+As specified by [WikiMedia](https://dumps.wikimedia.org/legal.html), all original textual content is licensed under the [GNU Free Documentation License (GFDL)](https://www.gnu.org/licenses/fdl-1.3.html) and the [Creative Commons Attribution-Share-Alike 3.0 License](https://creativecommons.org/licenses/by-sa/3.0/).
+
+## Code
+[GNU Affero General Public License v3.0](https://github.com/attardi/wikiextractor/blob/master/LICENSE)
