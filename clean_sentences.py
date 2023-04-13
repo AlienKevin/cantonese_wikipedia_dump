@@ -12,6 +12,9 @@ punctuations = {'@', '#', '$', '%', '^', '&', '*', '·', '…', '‥', '—', '�
             '「', '」', '﹁', '﹂', '『','』', '《', '》', '？', '，', '。', '、', '／', '＋',
             '〈','〉', '︿', '﹀', '［', '］', '‧'}
 alphanum = re.compile(r"[a-zA-Z0-9]")
+typo_table = {
+    "唨": "咗"
+}
 
 def filter_punctuations(s: str) -> str:
     return "".join(c for c in s if c not in punctuations)
@@ -19,6 +22,11 @@ def filter_punctuations(s: str) -> str:
 @lru_cache(maxsize=200)
 def filter_alnum(s: str) -> str:
     return "".join(c for c in s if not alphanum.match(c))
+
+def correct_typo(s: str) -> str:
+    for k, v in typo_table.items():
+        s = s.replace(k, v)
+    return s
 
 def filter_sent(s: str) -> Optional[str]:
     s = redundant_paren.sub("", s)
@@ -39,7 +47,7 @@ def filter_sent(s: str) -> Optional[str]:
     elif s.endswith("可以係：") and len(s) <= 10:
         return None
     else:
-        return s
+        return correct_typo(s)
 
 from tqdm import tqdm
 
